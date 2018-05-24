@@ -43,7 +43,7 @@ The example assumes that an instance, `net.biz.digitalPropertyNetwork#mae@biznet
   async function identityIssue() {
       let businessNetworkConnection = new BusinessNetworkConnection();
       try {
-          await businessNetworkConnection.connect('admin@digitalPropertyNetwork');
+          await businessNetworkConnection.connect('admin@network');
           let result = await businessNetworkConnection.issueIdentity('net.biz.digitalPropertyNetwork.Person#mae@biznet.org', 'maeid1')
           console.log(`userID = ${result.userID}`);
           console.log(`userSecret = ${result.userSecret}`);
